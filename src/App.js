@@ -1,6 +1,13 @@
 import React from 'react'
 import { View } from 'react-native'
+import { Provider } from 'react-redux'
 
-const App = () => <View />
+import { store } from './data'
+
+const App = () => (
+  <Provider store={store}>
+    <View />
+  </Provider>
+)
 
 export default App
