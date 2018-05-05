@@ -38,7 +38,10 @@
       "jest": true,
       "node": true
     },
-    "extends": ["equimper", "prettier"]
+    "extends": [
+      "equimper",
+      "prettier"
+    ]
   },
   "husky": {
     "hooks": {
@@ -49,6 +52,9 @@
     "preset": "react-native"
   },
   "lint-staged": {
-    "*.js": ["prettier --single-quote --no-semi --write", "git add"]
+    "*.js": [
+      "prettier --single-quote --no-semi --write",
+      "git add"
+    ]
   }
 }
